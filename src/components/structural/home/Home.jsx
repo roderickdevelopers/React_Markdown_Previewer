@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './Home.module.scss';
+import styles from 'components/structural/home/Home.module.scss';
+import MarkdownEditor from 'components/structural/markdownEditor/MarkdownEditor';
 
-class Home extends React.Component {
-    render() {
+function Home() {
         return (
             <div className={styles.home}>
-                You are seeing the Home Component
+               <MarkdownEditor /> 
             </div>
         );
     }
-}
 
-export default Home
+
+export default Home;

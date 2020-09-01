@@ -1,0 +1,21 @@
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #e0e5ec;
+    box-shadow: -9px -9px 16px #ffffff, 9px 9px 16px #a3b1c6;
+    border: none;
+    font-size: 19px;
+    border-radius: 8px;
+  }
+
+  .button:hover {
+    transform: scale(1.2);
+  }
+}
