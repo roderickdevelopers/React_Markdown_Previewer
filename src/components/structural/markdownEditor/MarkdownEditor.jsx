@@ -1,56 +1,96 @@
 import React from 'react';
-// import styles from 'components/structural/markdownEditor/MarkdownEditor.module.scss';
+import styles from 'components/structural/markdownEditor/MarkdownEditor.module.scss';
 import ButtonArea from 'components/structural/buttonArea/ButtonArea';
 import PreviewArea from 'components/structural/previewArea/PreviewArea';
 import TextArea from 'components/structural/textArea/TextArea';
 
 const placeholder = 
-`# Welcome to my React Markdown Previewer!
+`#  🎉 Welcome To The Markdown Previewer! 🎉
 
-## This is a sub-heading...
-### And here's some other cool stuff:
-  
-Heres some code, \`<div></div>\`, between 2 backticks.
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to GitHub](https://github.com/roderickdevelopers)
+
+# Headers
+
+# This is a Heading h1
+## This is a Heading h2 
+### This is a Heading h3
+
+
+# Emphasis
+
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+~~This will be crossed out~~
+
+_You **can** ~~combine~~ them_
+
+# Lists
+
+## Unordered
+
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+
+## Ordered
+
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+
+# Images
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
+# Links
+
+[MyGitHub](https://github.com/roderickdevelopers)
+
+# Blockquotes
+
+As Jacob Lett said:
+
+> Learning HTML and CSS is a lot more challenging 
+> then it used to be. Responsive web design adds more layers 
+> of complexity to design and develop websites.
+
+# Task Lists
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+# Tables
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+# Inline code
+
+I think you should use an \`<form>\` element instead
+
+# Code Snippets
 
 \`\`\`
-// this is multi-line code:
-
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
-    return multiLineCode;
-  }
-}
+const aboutMe = {
+  name: 'matthew roderick',
+  email: 'roderickdevelopers@gmail.com',
+  position: 'Jr.Developer',
+  website: 'roderickdevelopers.com'
+};  
 \`\`\`
-  
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
-
-There's also [links](https://www.freecodecamp.com), and
-> Block Quotes!
-
-And if you want to get really crazy, even tables:
-
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | ------------- 
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
-
-- And of course there are lists.
-  - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
-
-
-1. And there are numbererd lists too.
-1. Use just 1s if you want! 
-1. But the list goes on...
-- Even if you use dashes or asterisks.
-* And last but not least, let's not forget embedded images:
-
-![React Logo w/ Text](https://goo.gl/Umyytc)
 `
+
 
 
     class MarkdownEditor extends React.Component {
@@ -86,17 +126,17 @@ And here. | Okay. | I think we get it.
           const markdown = this.state.markdown;
           return (
             <>
-              <div className="markdown_editor_button_area">
+              <div className={styles.markdown_editor_button_area}>
                 <ButtonArea 
                   clearMarkdown={this.clearMarkdown}
                   resetMarkdown={this.resetMarkdown} />
               </div>
-              <div className="markdown_editor_text_area">
+              <div className={styles.markdown_editor_text_area}>
                 <TextArea 
                   updateMarkdown={this.updateMarkdown}
                   markdown={markdown} />
               </div>
-              <div className="markdown_editor_preview_area">
+              <div className={styles.markdown_editor_preview_area}>
                 <PreviewArea 
                   markdown={markdown}  
                 />
