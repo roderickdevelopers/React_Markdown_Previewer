@@ -1,1 +1,13 @@
 // @import '../../components/dynamic/error/Error.style.scss';
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #e0e5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+}
