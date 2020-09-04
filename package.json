@@ -2,7 +2,7 @@
   "name": "React_Markdown_Previewer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://roderickdevelopers.github.io/React_Markdown_Previewer",
+  "homepage": "https://roderickdevelopers.github.io/React_Markdown_Previewer/", 
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -145,6 +145,7 @@
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
+    "gh-pages": "^3.1.0",
     "sass-lint": "^1.13.1"
   }
 }
