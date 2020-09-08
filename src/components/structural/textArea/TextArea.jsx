@@ -5,7 +5,7 @@ import { PropTypes } from 'prop-types';
 function TextArea(props) {
   return (
     <div className={styles.text_area_container}>
-      <label className={styles.textarea} htmlFor="textarea">Enter Markdown here:</label>
+      <label className={styles.textarea_label} htmlFor="textarea">Enter Markdown here:</label>
       <textarea
         id="textarea"
         className={styles.editor}
@@ -13,12 +13,13 @@ function TextArea(props) {
         onChange={(e) => {
           props.updateMarkdown(e.target.value);}}>
         {props.markdown}
-      </textarea>
+      </textarea> 
     </div>
   );
 }
 
-TextArea.propTypes = { 
+TextArea.propTypes = {
+  copyButton: PropTypes.func,  
   markdown: PropTypes.string,
   updateMarkdown: PropTypes.func
 }

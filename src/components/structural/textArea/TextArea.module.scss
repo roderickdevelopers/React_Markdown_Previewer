@@ -1,3 +1,4 @@
+
 @import 'styles/global/breakpoints.scss';
 @import 'styles/global/variables.scss';
 
@@ -7,22 +8,27 @@
   flex-direction: column;
   justify-content: center;
 
-  .textarea {
-    margin: 3.125rem 0 1.5625rem;
-    text-align: center;
+  .textarea_label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
   }
 
   .editor {
     display: flex;
-    min-height: 33.33vh;
-    max-height: 33.33vh;
+    min-height: 50vh;
     flex: 1;
     font-size: $font_size_small;
     text-align: center;
+    resize: none;
     outline: none;
     justify-content: center;
     align-items: center;
-    resize: none;
 
     @include breakpoint(medium) {
       font-size: $font_size_medium;
