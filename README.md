@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  🎉 Welcome To The Markdown Previewer! 🎉
 
-## Available Scripts
+## Try it out: [Here](https://roderickdevelopers.github.io/React_Markdown_Previewer/#/)
 
-In the project directory, you can run:
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to GitHub](https://github.com/roderickdevelopers)
 
-### `yarn start`
+# Headers
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# This is a Heading h1
+## This is a Heading h2 
+### This is a Heading h3
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+# Emphasis
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*This text will be italic*
+_This will also be italic_
 
-### `yarn build`
+**This text will be bold**
+__This will also be bold__
+~~This will be crossed out~~
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_You **can** ~~combine~~ them_
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Lists
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Unordered
 
-### `yarn eject`
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Ordered
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Links
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[MyGitHub](https://github.com/roderickdevelopers)
 
-## Learn More
+# Blockquotes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As Jacob Lett said:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Learning HTML and CSS is a lot more challenging 
+> then it used to be. Responsive web design adds more layers 
+> of complexity to design and develop websites.
 
-### Code Splitting
+# Task Lists
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
 
-### Analyzing the Bundle Size
+# Tables
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
-### Making a Progressive Web App
+# Inline code
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+I think you should use an `<form>` element instead
 
-### Advanced Configuration
+# Code Snippets
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```
+const aboutMe = {
+  name: 'matthew roderick',
+  email: 'roderickdevelopers@gmail.com',
+  position: 'Jr.Developer',
+  website: 'roderickdevelopers.com'
+};  
+```
 
-### Deployment
+For more Markdown tips, check out this <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Cheat Sheet</a>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
