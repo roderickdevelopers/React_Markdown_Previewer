@@ -2,6 +2,17 @@
 
 ## Try it out: [Here](https://roderickdevelopers.github.io/React_Markdown_Previewer/#/)
 
+# Code Snippets
+
+```
+const aboutMe = {
+  name: 'matthew roderick',
+  email: 'roderickdevelopers@gmail.com',
+  position: 'Jr.Developer',
+  website: 'roderickdevelopers.com'
+};  
+```
+
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to GitHub](https://github.com/roderickdevelopers)
 
 # Headers
@@ -68,17 +79,6 @@ Content in the first column | Content in the second column
 # Inline code
 
 I think you should use an `<form>` element instead
-
-# Code Snippets
-
-```
-const aboutMe = {
-  name: 'matthew roderick',
-  email: 'roderickdevelopers@gmail.com',
-  position: 'Jr.Developer',
-  website: 'roderickdevelopers.com'
-};  
-```
 
 For more Markdown tips, check out this <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Cheat Sheet</a>
 
