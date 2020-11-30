@@ -26,7 +26,6 @@
   align-items: center;
 
 
-
   .clear_button_container {
     display: flex;
 
@@ -55,10 +54,11 @@
     font-size: $font_size_small;
     background-color: $color_white;
     border: 0;
+    border-radius: $border_radius_button;
     outline: none;
     justify-content: center;
     align-items: center;
-
+    
     @include breakpoint(medium) {
       margin: 0 0 0 $margin_main;
     }
