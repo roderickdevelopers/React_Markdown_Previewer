@@ -1,3 +1,10 @@
+@import 'styles/global/variables.scss';
+
 .error {
-    background-color: blue;
+    padding: 150px;
+    font-size: larger;
+    font-weight: bolder;
+    color: $color_white;
+    background-color: $color_blue;
+    border-radius: 2em;  
 }

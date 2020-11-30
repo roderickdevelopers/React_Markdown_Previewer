@@ -30,7 +30,6 @@
 	.markdown_editor_text_area {
 		display: flex;
 		flex: 1;
-		border-radius: $border_radius_main;
 	}
 
 	.markdown_editor_preview_area {
@@ -39,9 +38,10 @@
 		flex-direction: column;
 		margin: $margin_main 0;
 		overflow-y: scroll;
-		background-color: $color_background_main;
+		color: $color_white;
+		background-color: $color_blue;
 		box-shadow: $box_shadow_main;
-
+		
 		@include breakpoint (medium) {
 			margin: 0 0 0 $margin_main;
 		}
@@ -52,6 +52,10 @@
 
 		@include breakpoint (wide) {
 			margin: 0 0 0 $margin_main;
+		}
+
+		a {
+			color: $link_color;
 		}
 	}
 }
